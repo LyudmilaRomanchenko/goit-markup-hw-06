@@ -456,12 +456,12 @@
                     <use href="./img/main/sprite.svg#icon-close"></use>
                 </svg>
             </button>
-            <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form>
                 <div class="modal-form">
                     <label for="name">Имя</label>
                     <div class="modal-form-element">
-                        <input class="modal-form-input" type="name" name="name" id="name">
+                        <input class="modal-form-input" type="name" name="name" id="name" required>
                         <svg class="modal-form-icon">
                             <use href="./img/main/sprite.svg#icon-person"></use>
                         </svg>
@@ -469,7 +469,7 @@
                     
                     <label for="tel">Телефон</label>
                         <div class="modal-form-element">
-                            <input class="modal-form-input" type="tel" name="tel" id="tel">
+                            <input class="modal-form-input" type="tel" name="tel" id="tel" required>
                             <svg class="modal-form-icon tel">
                                 <use href="./img/main/sprite.svg#icon-phone"></use>
                             </svg>
@@ -478,7 +478,7 @@
                     
                     <label for="email">Почта</label>
                     <div class="modal-form-element">
-                        <input class="modal-form-input" type="email" name="email" id="email">
+                        <input class="modal-form-input" type="email" name="email" id="email" required>
                         <svg class="modal-form-icon">
                             <use href="./img/main/sprite.svg#icon-email"></use>
                         </svg>
@@ -488,16 +488,10 @@
                         <label for="comment">Комментарий</label>
                         <textarea name="comment" placeholder="Введите текст" id="comment"></textarea>
                     </div>
-                    <!--class="visually-hidden"-->
+                    
                     <div class="modal-form-policy">
-                        <input class="visually-hidden" type="checkbox" name="agree" id="agree">
-                        <svg class="policy-icon">
-                            <use href="./img/main/sprite.svg#icon-no-checked"></use>
-                        </svg>
-                        <svg class="policy-icon-checked">
-                            <use href="./img/main/sprite.svg#icon-checked"></use>
-                        </svg>
-                        <label class="agree" for="agree">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                        <input class="modal-policy-cell visually-hidden" type="checkbox" name="agree" id="agree">
+                        <label class="modal-policy-label" for="agree">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="">Условия договора</a></label>
                         
                     </div>
                     
