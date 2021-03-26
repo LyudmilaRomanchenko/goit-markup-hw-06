@@ -838,8 +838,8 @@ img {
 
 .modal-form-icon {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 34px;
+  /*transform: translateY(-50%);*/
   left: 15px;
   width: 18px;
   height: 18px;
@@ -907,9 +907,9 @@ img {
   left: 0;
 }
 
-.modal-form-policy input:focus + .policy-icon {
+/*.modal-form-policy input:focus + .policy-icon {
   box-shadow: 0px 0px 4px rgb(6, 41, 116);
-}
+}*/
 
 .modal-form-policy label {
   font-family: inherit;
@@ -934,7 +934,7 @@ img {
 }
 
 .modal-policy-cell:focus + .modal-policy-label::before {
-  box-shadow: 0 0 0 2px blue;
+  box-shadow: 0 0 0 2px #2196f3;
 }
 
 .modal-policy-cell:checked + .modal-policy-label::before {
